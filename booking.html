@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes | Book a Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo.png">
+
+
+</head>
+<body class="light-mode">
+    <div class="floating-paw" id="paw">🐾</div>
+
+ <nav>
+        <h1 class="logo"> <img src="assets/logo.png">  Loving Homes</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="booking.html">Booking</a>
+
+            <div class="accessibility-wrapper">
+                <button id="acc-menu-btn" class="acc-main-btn">Accessibility</button>
+                <div id="acc-content" class="acc-dropdown-content">
+                    <div class="acc-item">
+                        <span>Text Size:</span>
+                        <div class="btn-group">
+                            <button id="decrease-text">A-</button>
+                            <button id="increase-text">A+</button>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <span>Theme:</span>
+                        <button id="theme-toggle" class="btn-toggle">Dark</button>
+                    </div>
+
+                    <div class="acc-item">
+                        <span>Audio:</span>
+                        <button id="read-aloud-btn" class="btn-toggle">🔊 Read Page</button>
+                        <button id="stop-read-btn" class="btn-toggle" style="display:none; background:red;">Stop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+        <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <img src="assets/doghands.png" class="head-image">
+        <div class="hero-content">
+            <h2>Book a service</h2>
+            <br>
+            <p>Please fill out the form below to book a service for your dog.</p>
+    </section>
+
+    <section id="booking-form" class="container booking-section">
+        <h3>Book a Service</h3>
+        <form class="booking-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Dog Name" required>
+            <select required>
+                <option value="">Select Service</option>
+                <option>Premium</option>
+                <option>Classic</option>
+                <option>One day plan</option>
+            </select>
+            <input type="date" required>
+            <button type="submit" class="btn-submit" formnovalidate>Submit Booking</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h3>Contact Us</h3>
+        <p>📞 079-756-2462</p>
+        <p>📧 LovingHomes on Instagram</p>
+        <p>📍 Hong Kong</p>
+    </section>
+
+    <footer>
+        © 2026 Loving Homes. All Rights Reserved.
+    </footer>
+
+<audio id="errorSound" preload="auto">
+    <source src="assets/error.mp3" type="audio/mpeg">
+</audio>
+<audio id="successSound" preload="auto">
+    <source src="assets/success.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
